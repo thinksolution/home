@@ -29,7 +29,7 @@
 .magtapp_navbar {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -44,15 +44,27 @@
     width: 9rem;
     margin-left:100px
 }
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
 
 nav ul li {
-    margin: 0 2rem 0 0;
+    background-color:#174DD8 ;
+    padding:8px;
     font-size: medium;
     opacity: .8;
     cursor: pointer;
     list-style: none;
-    display: inline-block;
+    margin-right: 10px;
+    border-radius: 100px;
 }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+} 
 
 li:hover {
     color: #174DD8;
@@ -813,4 +825,9 @@ tr td {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+@media screen and (max-width: 600px){
+    nav ul li{
+        display: none;
+    }
 }
