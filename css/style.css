@@ -1,0 +1,816 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --background: #E7F1FA;
+    --font: #30465A;
+    --font2: #174DD8;
+    --font3: #8A8A8A;
+    --btn1: #EAF3FA;
+}
+
+.containers {
+    background: var(--background);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+
+.main_wrap {
+    margin-bottom: 2rem;
+}
+
+.magtapp_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.magtapp_logo {
+    height: 3rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    width: 9rem;
+    margin-left:100px
+}
+
+nav ul li {
+    margin: 0 2rem 0 0;
+    font-size: medium;
+    opacity: .8;
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+}
+
+li:hover {
+    color: #174DD8;
+}
+
+li:nth-child(5) {
+    margin-right: 0;
+}
+
+.toggle_navbar {
+    display: none;
+    cursor: pointer;
+    width: 2rem;
+}
+
+/* Header section start */
+.magtapp_wrapper_header {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--font);
+    opacity: .9;
+    text-align: center;
+}
+
+.magtapp_wrapper_header p:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+    color: var(--font2);
+}
+
+.magtapp_download {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.apple_logo {
+    margin-right: 1.7rem;
+}
+
+.apple_logo p {
+    margin-top: 2px;
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.apple_logo,
+.playstore_logo {
+    display: flex;
+    justify-content: space-between;
+    background: var(--btn1);
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.16), inset 3px 4px 5px rgba(255, 255, 255, 0.59);
+    border-radius: 47px;
+    padding: 1rem 1.5rem;
+}
+
+.apple_logo p,
+.playstore_logo p {
+    font-size: 8px;
+    font-weight: 600;
+    opacity: .85;
+    margin-top: 2px;
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.apple_logo img {
+    width: 30px;
+    height: 29px;
+    margin-right: 7px;
+}
+
+
+.playstore_logo img {
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+}
+
+.magtapp_p {
+    font-size: 8px;
+    opacity: .8;
+    font-weight: 500;
+}
+
+.magtapp_logo_span {
+    font-weight: 600;
+    font-size: 12px;
+    opacity: .95;
+}
+
+.slider {
+    position: relative;
+    width: 50%;
+    height: 22rem;
+    margin: 80px auto;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+}
+
+input[type=radio] {
+    position: relative;
+    top: 23.5rem;
+    left: 50%;
+    width: 15px;
+    height: 13px;
+    opacity: 0.4;
+    transform: translateX(-33px);
+    cursor: pointer;
+}
+
+input[type=radio]:nth-child(5) {
+    margin-right: 0px;
+}
+
+input[type=radio]:checked {
+    opacity: 1;
+}
+
+label img {
+    width: 12rem;
+    height: 22rem;
+}
+
+.slider label {
+    position: absolute;
+    left: 35%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms ease;
+}
+
+.animation {
+    left: -2.4%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: right top;
+    width: 100;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 
+.one {
+    width: 30rem;
+    height: 26rem;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+}
+
+.img1 {
+    opacity: 0.9;
+    transform: translate(-118%, 25%);
+    z-index: 98;
+}
+
+.img2 {
+    opacity: 1;
+    transform: translate(-84%, 15%);
+    z-index: 99;
+}
+
+.img3 {
+    opacity: 1;
+    transform: translate(-50%, 5%);
+    z-index: 100;
+}
+
+.img4 {
+    opacity: 1;
+    transform: translate(-16%, 15%);
+    z-index: 99;
+}
+
+.img5 {
+    opacity: 1;
+    transform: translate(18%, 25%);
+    z-index: 98;
+} */
+
+/* Header section end*/
+
+/* Product section start */
+
+.magtapp_products_container {
+    margin-top: 3rem;
+
+}
+
+.magtapp_product_p {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--font);
+    opacity: .8;
+}
+
+.magtapp_product {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.magtapp_product_card {
+    width: fit-content;
+    padding: 2rem 1rem 2rem 2rem;
+    color: var(--font3);
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(205, 229, 247, 0.44);
+    border-radius: 54px;
+    /* min-height: 10rem; */
+}
+
+.magtapp_product_card p:nth-child(1) {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--font);
+}
+
+.magtapp_product_card p:nth-child(2) {
+    font-size: 14px;
+}
+
+.magtapp_product_card_2 {
+    width: fit-content;
+    padding: 2rem 1rem 2rem 2rem;
+    color: var(--font3);
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(205, 229, 247, 0.44);
+    border-radius: 54px;
+}
+
+.magtapp_product_card_2 p:nth-child(1) {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--font);
+}
+
+.magtapp_product_card_2 p:nth-child(2) {
+    font-size: 14px;
+}
+
+.product_logo_book,
+.product_logo_docoment,
+.product_logo_laptop,
+.product_logo_search {
+    padding: 1.5rem;
+    align-items: center;
+    border-radius: 50%;
+    background: #EBF2FA;
+    box-shadow: -3px -2px 6px rgba(255, 255, 255, 0.53), 3px 3px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_logo_book img {
+    height: 46px;
+    /* width: 30px; */
+}
+
+.download_btn {
+    padding: 1rem 4rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 38px;
+    border-style: none;
+    color: #30465A;
+    background: #EAF3FA;
+    box-shadow: -3px -2px 6px rgba(255, 255, 255, 0.53), 3px 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 47px;
+
+}
+
+.download_btn_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.arrow {
+    width: 10px;
+    margin-left: 5px;
+}
+
+/* Product section start */
+
+/* testimonials section start */
+
+.testimonials_p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials_p p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    color: var(--font);
+    opacity: .9;
+}
+
+.item img {
+    width: 150px !important;
+    height: 150px;
+    margin-bottom: 2rem;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #E7F1FA;
+}
+
+/* Slides */
+.mySlides {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    text-align: center;
+
+}
+
+q {
+    color: #30465A;
+    font-weight: 400;
+    opacity: .8;
+    text-align: center;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.star img {
+    width: 1rem !important;
+    height: 1rem;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #E7F1FA;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background: #B4C1CC;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+
+.dot:hover {
+    transform: scale(1.5);
+    background-color: #30465A;
+    transition: background-color 0.6s ease;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: black;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* testimonial section end */
+
+/* Qustion section start */
+.qustion_p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qustion_p p {
+    font-size: 2rem;
+    color: var(--font)
+}
+
+.qustion_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qustions {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 1.2rem; */
+}
+
+.qustions img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.qustions p {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--font);
+}
+
+.screen_6 img {
+    width: 28rem;
+    height: 28rem;
+}
+
+hr {
+    width: 600px;
+    color: var(--font);
+}
+
+/* Qustion section end */
+
+/* Contact section start */
+.contact_box {
+    display: flex;
+}
+
+.contact_p p {
+    font-size: 1.7rem;
+    color: var(--font);
+    text-align: center;
+    padding: 15px;
+}
+
+.contact_left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.input_row .input_group {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.input_group input {
+    width: 65%;
+    padding: 1rem 1.5rem;
+    font-style: normal;
+    font-size: medium;
+    line-height: 20px;
+    border-style: none;
+    color: #30465A;
+    outline: none;
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.16), inset 3px 4px 5px rgba(255, 255, 255, 0.59);
+    border-radius: 20px;
+
+}
+
+.input_group textarea {
+    width: 65%;
+    padding: 1rem 1.5rem;
+    font-style: normal;
+    font-size: medium;
+    line-height: 20px;
+    border-style: none;
+    color: #30465A;
+    outline: none;
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.16), inset 3px 4px 5px rgba(255, 255, 255, 0.59);
+    border-radius: 20px;
+
+}
+
+.input_group button {
+    padding: 1rem 4rem;
+    font-style: normal;
+    font-size: medium;
+    line-height: 20px;
+    border-style: none;
+    color: #30465A;
+    background: #EAF3FA;
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.16), inset 3px 4px 5px rgba(255, 255, 255, 0.59);
+    border-radius: 30px;
+}
+
+.contact_right {
+    flex-basis: 40%;
+    padding: 40px;
+}
+
+.contact_us {
+    margin-top: 2rem;
+}
+
+.contact_us_p p {
+    font-size: 1.7rem;
+    color: var(--font);
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+tr td:first-child {
+    padding-right: 1.5rem;
+}
+
+tr td img {
+    padding-left: 2rem;
+}
+
+tr td {
+    padding-top: 1.5rem;
+    color: #30465A;
+}
+
+/* Contact section end */
+#message {
+    height: 95px;
+
+
+}
+
+/*Responsive code*/
+@media only screen and (max-width:786px) {
+    nav ul {
+        width: 100%;
+        background: #EBF2FA;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        /* margin-bottom: 15px; */
+        margin-left: 2rem;
+        line-height: 1.5rem;
+    }
+
+    .toggle_navbar {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 786px) {
+    .slider img {
+        width: 100%;
+        right: 0;
+        margin: 0 5rem 0 0;
+    }
+
+    .magtapp_product_p {
+        font-size: 18px;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .slider img {
+        width: 150%;
+        right: 0;
+        margin: 0 3rem 0 0;
+    }
+
+    .magtapp_product_p {
+        font-size: 15px;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width:1280) {
+    label img {
+        width: 14rem;
+        height: 22rem;
+    }
+}
+
+/* slider css */
+
+.contain {
+    /* margin: 0 auto; */
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.item {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1.7rem 1.7rem 1rem 1.7rem;
+    background: #FFFFFF;
+    color: white;
+    box-shadow: 0px 4px 40px rgba(205, 229, 247, 0.44);
+    border-radius: 54px;
+}
+
+/* qustion section */
+.btn-back {
+    background: var(--background) ! important;
+    width: 65%;
+}
+
+.btn-back:after {
+    content: '\2122';
+    width: 35px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    right: 15px;
+    top: 11px;
+    position: absolute;
+    background-color: #B4C1CC;
+}
+
+.btn-back.collapsed {
+    content: '002B';
+}
+
+.container {
+    text-align: center;
+}
+
+.container h2 {
+    font-weight: 600;
+    color: #30465A;
+    margin-top: 2rem;
+    opacity: .9;
+}
+
+.qustion_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rows {
+    display: table-row;
+    flex: 3;
+}
+
+.screen_6 {
+    margin-top: 2rem;
+}
+
+.accordion-body {
+    text-align: left;
+}
+
+.card3 {
+    margin-bottom: 1.5rem;
+    width: 17rem;
+}
+
+.main_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.a1234 {
+
+    width: 80%;
+}
+
+.accordion-body {
+    color: #30465A;
+    background: var(--background);
+}
+
+.header {
+    margin: 2rem 0;
+    text-align: center;
+    color: #30465A;
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: .9;
+}
+
+.product_container {
+    display: flex;
+}
+
+.inner_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

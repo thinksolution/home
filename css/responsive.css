@@ -1,0 +1,132 @@
+@media only screen and (max-width:768px) {
+    .magtapp_product {
+        flex-direction: column;
+    }
+
+    .qustion_wrap {
+        flex-direction: column;
+    }
+
+    .one {
+        width: 11rem;
+        height: 20rem;
+        position: absolute;
+        bottom: 0px;
+        left: 44%;
+    }
+
+    .product_logo_book {
+        margin-bottom: 1rem;
+        display: none;
+    }
+
+    .product_logo_docoment {
+        display: none;
+    }
+
+    .product_logo_laptop {
+        display: none;
+    }
+
+    .product_logo_search {
+        display: none;
+    }
+
+    .magtapp_product_card {
+        margin-bottom: 1rem;
+        max-width: 19rem;
+        width: 19rem;
+    }
+
+    .product_logo_laptop {
+        margin-bottom: 1rem;
+    }
+
+    .magtapp_product_card_2 {
+        margin-bottom: 1rem;
+        max-width: 19rem;
+        width: 19rem;
+    }
+
+    .testimonials_p {
+        text-align: center;
+    }
+
+    .qustion_wrapper {
+        flex-direction: column;
+    }
+
+    .qustion_p {
+        text-align: center;
+    }
+
+    .screen_6 {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .screen_6 img {
+        margin: 0;
+    }
+
+    .contact_box {
+        flex-direction: column;
+    }
+
+    .contact_left {
+        padding: 40px 0;
+    }
+
+    .input_group input {
+        width: 86%;
+    }
+
+    .input_group textarea {
+        width: 86%;
+    }
+
+    .card3 {
+        margin-left: 21px;
+    }
+
+    .product_container {
+        flex-direction: column;
+    }
+
+}
+
+header {
+    font-size: 1.7rem;
+}
+
+.toggle_navbar {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+
+
+@media only screen and (max-width:600px) {
+    .magtapp_wrapper_header {
+        font-size: 1.7rem;
+    }
+
+    p:nth-child(3) {
+        font-size: 1.5rem;
+    }
+
+    .download_btn {
+        font-size: 13px;
+        padding: 0rem 3rem;
+    }
+
+    .contact_right {
+        padding: 0;
+    }
+
+    td p {
+        font-size: 10px;
+    }
+}
