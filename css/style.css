@@ -55,7 +55,6 @@ nav ul li {
     background-color:#174DD8 ;
     padding:8px;
     font-size: medium;
-    opacity: .8;
     cursor: pointer;
     list-style: none;
     margin-right: 10px;
@@ -64,11 +63,13 @@ nav ul li {
 nav ul li a{
     text-decoration: none;
     color: white;
+} nav ul li a:hover{
+    text-decoration: none;
+    color: white;
+    background-color:#174DD8;
+     opacity: .8;
 } 
 
-li:hover {
-    color: #174DD8;
-}
 
 li:nth-child(5) {
     margin-right: 0;
@@ -825,9 +826,14 @@ tr td {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width:unset ;
 }
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 768px){
     nav ul li{
+        display: none;
+    }
+    .img_wrap{
         display: none;
     }
 }
